@@ -14,9 +14,7 @@ import "react-toastify/dist/ReactToastify.css";
 
 const BlogPage = () => {
   const navLinks = [
-    { link: "posts", value: "Posts" },
     { link: "newpost", value: "New Post" },
-    { link: "about", value: "About" },
     { link: "me", value: "Profile" },
     { link: "signout", value: "SignOut" },
   ];
@@ -28,7 +26,7 @@ const BlogPage = () => {
       <ToastContainer />
 
       <Router>
-        <BlogList path="/posts" />
+        <BlogList path="/posts" default />
         <UserProfile path="/me" />
         <About path="/about" />
         <CreatePost path="/newpost" />

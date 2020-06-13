@@ -8,7 +8,7 @@ const Navbar = ({ navLinks, classAddition }) => {
   return (
     <nav className={"navbar navbar-expand-lg" + classAddition}>
       <div className="container">
-        <Link className="navbar-brand" to="#">
+        <Link className="navbar-brand" to="/">
           Vishify
         </Link>
         <button
