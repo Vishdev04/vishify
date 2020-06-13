@@ -1,0 +1,10 @@
+@font-face {
+  font-family: "Glamatrix";
+  src: url("./fonts/Glametrix-oj9A.otf") format("opentype");
+}
+
+$font-glamatrix: "Glamatrix";
+
+body {
+  font-family: $font-glamatrix;
+}

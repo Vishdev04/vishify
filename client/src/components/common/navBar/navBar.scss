@@ -1,0 +1,64 @@
+@font-face {
+  font-family: "Aloha Demo";
+  src: url("../../../fonts/AlohaDemo-ya0V.ttf") format("truetype");
+}
+
+$font-aloha: "Aloha Demo";
+
+.navbar {
+  align-items: center;
+  height: 10vh;
+  padding: 0;
+  margin: 0;
+
+  .navbar-brand {
+    font-family: $font-aloha;
+    font-size: 1.6rem;
+  }
+
+  .navbar-toggler {
+    border: none;
+    outline: none;
+  }
+
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(2505,255,255, 0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  }
+
+  a {
+    font-size: 1.3rem;
+    color: white;
+  }
+
+  .nav-link:not(.active) {
+    opacity: 0.6;
+  }
+
+  .nav-link {
+    margin-left: 4em;
+  }
+}
+
+$breakpoint-phone: 768px;
+@media (max-width: $breakpoint-phone) {
+  .navbar {
+    align-items: center;
+    z-index: 5;
+    height: max-content;
+    padding: 0;
+    margin: 0;
+
+    a {
+      font-size: 1.3rem;
+      color: white;
+    }
+
+    .nav-link:not(.active) {
+      opacity: 0.6;
+    }
+
+    .nav-link {
+      margin-left: 4em;
+    }
+  }
+}

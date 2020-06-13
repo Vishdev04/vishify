@@ -1,0 +1,43 @@
+body {
+  height: 100vh;
+  background: #eee;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.container {
+  padding: 0;
+  width: 65%;
+  max-width: 900px;
+  margin: auto;
+}
+
+.content {
+  margin-top: 5em;
+  color: #fff;
+  width: 80%;
+  max-width: 500px;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: bolder;
+  margin: 0.5em 0;
+}
+
+p {
+  margin: 0.7em 0;
+  font-size: 1.5rem;
+  line-height: 1em;
+}
+
+$breakpoint-phone: 768px;
+@media (max-width: $breakpoint-phone) {
+  body {
+    height: 110vh;
+  }
+
+  .container {
+    width: 80%;
+  }
+}

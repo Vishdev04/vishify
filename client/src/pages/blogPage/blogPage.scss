@@ -1,0 +1,18 @@
+body {
+  background-color: #eee;
+}
+
+.container {
+  padding: 0;
+  width: 65%;
+  max-width: 900px;
+  margin: auto;
+}
+
+.navbar {
+  &.dark {
+    a {
+      color: black;
+    }
+  }
+}
